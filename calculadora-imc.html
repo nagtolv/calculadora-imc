@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <title>Calculadora IMC</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+<body>
+    <main class="container">
+         <section>
+            <h2>Calcule seu IMC</h2>
+            <form action="" method="get" id="form">
+                <label>Peso:</label>
+                <input type="number" placeholder="Ex: 50" id="peso" min="10" max="300" required>
+                <label>Altura:</label>
+                <input type="number" placeholder="Ex: 1.60 (Use ponto ou vírgula)" step="0.010" min="1.0" max="2.50" id="altura" required>
+                <input type="submit" value="Calcular">
+            </form>
+        </section>
+        <section class="section_two">
+            <h3 id="show_result"></h3>
+            <p id="result"></p>
+
+            <table>
+                <tr>
+                    <td class="titulo">IMC</td>
+                    <td class="titulo">Classificação</td>
+                </tr>
+                <tr>
+                    <td>Menos do que 18,5</td>
+                    <td>Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25 e 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,9</td>
+                    <td>obesidade grau 1</td>
+                </tr>
+                <tr>
+                    <td>Entre 35 e 39,9</td>
+                    <td>obesidade grau 2</td>
+                </tr>
+                <tr>
+                    <td>Mais do que 40</td>
+                    <td>obesidade grau 3</td>
+                </tr>
+            </table>
+            <p class="small">Nota: o cálculo de IMC não leva em consideração a composição corporal. Por esse motivo, pessoas com muita massa muscular, como é o caso de alguns atletas, podem apresentar um IMC acima do normal.
+            O ideal é consultar um nutricionista para fazer uma avaliação mais detalhada.</p>
+        </section>
+    </main>
+
+    <script src='js/script.js'></script>
+</body>
+</html>
