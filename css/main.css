@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/************** Ajustar ***************/
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  background-color: var(--color-darkmode);
+  font-family: 'Raleway', sans-serif; /*Open sans*/
+  color: #DCDCDC;
+}
+:root{
+  --color-main: #B22222;
+  --color-darkmode: #1C1C1C;
+}
+/*************** Global ***************/
+ul{
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+li a{
+  position: relative;
+  text-decoration: none;
+  padding: 5px 0 5px 0;
+  margin-left: 25px;
+  color: #DCDCDC;
+}
+a{
+  text-decoration: none;
+}
+.logotipo{
+  font-size: 18px;
+}
+.fa-angle-right{
+  color: var(--color-main);
+}
+.marcador{
+  color: var(--color-main);
+  text-transform: uppercase;
+}
+/**** Primeira Parte ****/
+.menu a:hover{
+  color: var(--color-main);
+}
+.button-main, .button-secondary{
+  border: 2px solid var(--color-main);
+  border-radius: 6px;
+  padding: 8px 15px 8px 15px;
+  color: white;
+  margin-top: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+.button-main{
+  background-color: var(--color-main);
+}
+.button-secondary{
+  background-color: var(--color-darkmode);
+}
+.button-secondary:hover{
+  color: var(--color-main);
+}
+/**** Projetos ****/
+.projects-card{
+    height: auto;
+    padding: 15px;
+    border: 2px solid #363636;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.projects-card img{
+  border-radius: 5px;
+}
+.center{
+  font-size: 14px;
+}
+.block-button{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.technologies{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.technologies span{
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 3px 7px 3px 7px;
+  border: 1px solid #363636;
+}
+/***************** Mobile ******************/
+@media (max-width: 500px){
+  nav{
+    display: none;
+  }
+  .header-navbar{
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .banner{
+    display: none;
+  }
+  .presentation{
+    padding: 50px 10px 50px 10px;
+    margin: 80px 10px 80px 10px;
+    line-height: 1.4;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  h1{
+    font-size: 28px;
+  }
+  .marcador{
+    font-size: 17px;
+  }
+  .title-h2{
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /**** Projetos ****/
+  #projects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .projects-card{
+    max-width: 100%;
+    margin: 30px;
+  }
+  .projects-card h3{
+    text-align: center;
+  }
+  .fundo-project{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+  }
+  .fundo-project > img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .center{
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /*Skills*/
+  .hards-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    margin: 80px 0 80px 0;
+  }
+  .skills{
+    display: block;
+    margin: 0 auto;
+  }
+  .center-skills{
+    text-align: center;
+    font-size: 11px;
+  }
+  .hards-skills .fa-html5{
+    font-size: 50px;
+  }
+  .hards-skills .fa-css3-alt{
+    font-size: 50px;
+    
+  }
+  .hards-skills .fa-square-js{
+    font-size: 50px;
+    
+  }
+  /**** Sobre ****/
+  .about-me{
+    padding: 15px;
+  }
+  .parte-1{
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  .parte-2{
+    margin-left: 180px;
+    align-self: center;
+    margin: 10px;
+  }
+  .parte-2 img{
+    border-radius: 50%;
+    border: 3px solid #DCDCDC;
+    display: block;
+    margin: 0 auto;
+  }
+  .redes-sociais{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .icon-about{
+    margin: 8px;
+  }
+  .marca-about{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-main);
+  }
+  .icon-about{
+    font-size: 23px;
+    padding-left: 8px;
+    color: #DCDCDC;
+  }
+  /****** Footer ******/
+  footer{
+    display: block;
+    text-align: center;
+    border-top: 1px solid #363636;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .cor-icon{
+    font-size: 22px;
+    padding-left: 10px;
+    color: #DCDCDC;
+  }
+}
+/****************** Tablet 1 ********************/
+@media (min-width: 501px) and (max-width: 705px){
+  header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #363636;
+    font-size: 15px;
+  }
+  .navbar{
+    align-self: center;
+  }
+  .menu li{
+    border: 2px solid #1C1C1C;
+  }
+  .banner{
+    display: none;
+  }
+  .presentation{
+    padding: 50px 10px 50px 10px;
+    margin: 80px 30px 80px 30px;
+    line-height: 1.4;
+    font-size: 16px;
+    max-width: 100%;
+  }
+  h1{
+    font-size: 30px;
+  }
+  .marcador{
+    font-size: 17px;
+  }
+  .title-h2{
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  /****** Projetos ******/
+  #projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .projects-card{
+    width: 230px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(17, 17, 17, 0.507), 5px 5px 5px 5px rgba(17, 17, 17, 0.233);
+  }
+  .projects-card h3{
+    text-align: center;
+  }
+  .fundo-project{
+     /*#363636*/
+    width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+  }
+  .fundo-project > img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border: 1px solid #363636;
+  }
+  .center{
+    display: block;
+    margin: 0 auto;
+  }
+  /****** Sobre Mim ******/
+  .about-me{
+    padding: 30px;
+  }
+  .parte-1{
+    align-self: center;
+    padding: 30px;
+  }
+  .parte-2{
+    align-self: center;
+    margin: 10px;
+  }
+  .parte-2 img{
+    border-radius: 50%;
+    border: 3px solid #DCDCDC;
+    display: block;
+    margin: 0 auto;
+  }
+  .redes-sociais{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .icon-about{
+    margin: 8px;
+  }
+  .marca-about{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-main);
+  }
+  .icon-about{
+    font-size: 23px;
+    padding-left: 8px;
+    color: #DCDCDC;
+  }
+  /****** Footer ******/
+  footer{
+    display: block;
+    text-align: center;
+    border-top: 1px solid #363636;
+    padding: 25px;
+    margin-top: 50px;
+  }
+  .fa-arrow-up-right-from-square{
+    cursor: pointer;
+  }
+  .cor-icon{
+    font-size: 22px;
+    padding-left: 10px;
+    color: #DCDCDC;
+  }
+  footer > img{
+    cursor: pointer;
+  }
+}
+/****************** Tablet 2 ******************/
+@media (min-width: 706px) and (max-width: 806px){
+  p{
+    font-size: 16px;
+  }
+  h1,h2{
+    font-size: 30px;
+  }
+  h4{
+    text-transform: uppercase;
+  }
+  .title-h2{
+    margin-left: 12.5%;
+    padding: 10px 0 10px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  /****** Primeira Parte ******/
+  header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #363636;
+    font-size: 18px;
+  }
+  .navbar{
+    align-self: center;
+  }
+  .menu li{
+    border: 2px solid #1C1C1C;
+  }
+  .presentation{
+    display: grid;
+    grid-template-areas: "apress banner";
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .apress{
+    align-self: center;
+    line-height: 1.4;
+  }
+  .banner{
+    align-self: center;
+    margin-left: 60px;
+  }
+  .banner img{
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+    height: auto;
+  }
+  /****** Projetos ******/
+  #projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1%;
+    /*margin-left: 12.5%;*/
+  }
+  .projects-card:hover{
+    /*border: 2px solid var(--color-main);*/
+    transition: 0.7s;
+  }
+  .projects-card{
+    width: 260px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(17, 17, 17, 0.507), 5px 5px 5px 5px rgba(17, 17, 17, 0.233);
+  }
+  .projects-card h3{
+    text-align: center;
+  }
+  .fundo-project{
+     /*#363636*/
+    width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+  }
+  .fundo-project > img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border: 1px solid #363636;
+  }
+  .center{
+    display: block;
+    margin: 0 auto;
+  }
+  /****** Sobre Mim ******/
+  .about-me{
+    display: grid;
+    grid-template-areas: "parte-1 parte-2";
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+  }
+  .parte-1{
+    align-self: center;
+    font-size: 16px;
+  }
+  .parte-2{
+    margin-left: 80px;
+    align-self: center;
+  }
+  .parte-2 img{
+    border-radius: 50%;
+    border: 3px solid #DCDCDC;
+    display: block;
+    margin: 0 auto;
+  }
+  .redes-sociais{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .icon-about{
+    margin: 8px 8px 8px 8px;
+  }
+  .marca-about{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-main);
+  }
+  .icon-about{
+    font-size: 23px;
+    padding-left: 8px;
+    color: #DCDCDC;
+  }
+  /****** Footer ******/
+  footer{
+    display: block;
+    text-align: center;
+    border-top: 1px solid #363636;
+    padding: 25px;
+    margin-top: 50px;
+  }
+  .fa-arrow-up-right-from-square{
+    cursor: pointer;
+  }
+  .cor-icon{
+    font-size: 22px;
+    padding-left: 10px;
+    color: #DCDCDC;
+  }
+  footer > img{
+    cursor: pointer;
+  }
+}
+
+/****************** Desktop ******************/
+@media (min-width: 807px){
+  p{
+    font-size: 16px;
+  }
+  h1,h2{
+    font-size: 30px;
+  }
+  h4{
+    text-transform: uppercase;
+  }
+  .title-h2{
+    margin-left: 12.5%;
+    padding: 10px 0 10px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  /****** Primeira Parte ******/
+  header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #363636;
+    font-size: 18px;
+  }
+  .navbar{
+    align-self: center;
+  }
+  .menu li{
+    border: 2px solid #1C1C1C;
+  }
+  .presentation{
+    display: grid;
+    grid-template-areas: "apress banner";
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .apress{
+    align-self: center;
+    line-height: 1.4;
+  }
+  .banner{
+    align-self: center;
+    margin-left: 90px;
+  }
+  .banner img{
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+  }
+  /****** Projetos ******/
+  #projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1%;
+    /*margin-left: 12.5%;*/
+  }
+  .projects-card:hover{
+    /*border: 2px solid var(--color-main);*/
+    transition: 0.7s;
+  }
+  .projects-card{
+    width: 260px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(17, 17, 17, 0.507), 5px 5px 5px 5px rgba(17, 17, 17, 0.233);
+  }
+  .projects-card h3{
+    text-align: center;
+  }
+  .fundo-project{
+     /*#363636*/
+    width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+  }
+  .fundo-project > img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border: 1px solid #363636;
+  }
+  .center{
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*Skills*/
+  .hards-skills{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  .center-skills{
+    text-align: center;
+    font-size: 11px;
+  }
+  .hards-skills .fa-html5{
+    font-size: 50px;
+    
+  }
+  .hards-skills .fa-css3-alt{
+    font-size: 50px;
+    
+  }
+  .hards-skills .fa-square-js{
+    font-size: 50px;
+    
+  }
+  /****** Sobre Mim ******/
+  .about-me{
+    display: grid;
+    grid-template-areas: "parte-1 parte-2";
+    grid-template-columns: 35% 35%;
+    justify-content: center;
+    gap: 10px;
+  }
+  .parte-1{
+    align-self: center;
+  }
+  .parte-2{
+    margin-left: 180px;
+    align-self: center;
+  }
+  .parte-2 img{
+    border-radius: 50%;
+    border: 3px solid #DCDCDC;
+    display: block;
+    margin: 0 auto;
+  }
+  .redes-sociais{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .icon-about{
+    margin: 8px 8px 8px 8px;
+  }
+  .marca-about{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-main);
+  }
+  .icon-about{
+    font-size: 23px;
+    padding-left: 8px;
+    color: #DCDCDC;
+  }
+  /****** Footer ******/
+  footer{
+    display: block;
+    text-align: center;
+    border-top: 1px solid #363636;
+    padding: 25px;
+    margin-top: 50px;
+  }
+  .fa-arrow-up-right-from-square{
+    cursor: pointer;
+  }
+  .cor-icon{
+    font-size: 22px;
+    padding-left: 10px;
+    color: #DCDCDC;
+  }
+  footer > img{
+    cursor: pointer;
+  }
+}
